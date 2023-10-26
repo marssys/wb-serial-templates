@@ -1,0 +1,82 @@
+{
+    "title": "Princ Gas Meter (RS-485/232 adapter, Modbus)",
+    "device_type": "princ_gas_meter_adapter",
+    "group": "g-custom",
+    "device": {
+        "name": "Princ Gas Meter",
+        "id": "princ_gas_meter",
+        "guard_interval_us": 5000,
+        "channels": [
+            {
+                "name": "Volume I, m3",
+                "id": "volume_i",
+                "reg_type": "input",
+                "address" : "0",
+                "type": "value",
+                "format": "u32",
+                "word_order" : "little_endian"
+            },
+            {
+                "name": "Volume F, mm3",
+                "id": "volume_f",
+                "reg_type": "input",
+                "address" : "2",
+                "type": "value",
+                "format": "u32",
+                "word_order" : "little_endian"
+            },
+            {
+                "name": "Operating Time, secs",
+                "id": "operating_time",
+                "reg_type": "input",
+                "address" : "4",
+                "type": "value",
+                "format": "u32",
+                "word_order" : "little_endian"
+            },
+            {
+                "name": "Fault Time, secs",
+                "id": "fault_time",
+                "reg_type": "input",
+                "address" : "6",
+                "type": "value",
+                "format": "u32",
+                "word_order" : "little_endian"
+            },
+            {
+                "name": "Time After Check, secs",
+                "id": "time_after_check",
+                "reg_type": "input",
+                "address" : "8",
+                "type": "value",
+                "format": "u32",
+                "word_order" : "little_endian"
+            },
+            {
+                "name": "Battery Rest, months",
+                "id": "battery_rest",
+                "reg_type": "input",
+                "address" : "16",
+                "type": "value",
+                "format": "u16"
+            },
+            {
+                "name": "Gas Temperature",
+                "id": "gas_temperature",
+                "reg_type": "input",
+                "address" : "19",
+                "type": "temperature",
+                "format": "s16",
+                "scale": 0.1
+            },
+            {
+                "name": "Battery Voltage, mV",
+                "id": "battery_voltage",
+                "reg_type": "input",
+                "address" : "36",
+                "type": "value",
+                "format": "u16"
+            }
+        ]
+    }
+}
