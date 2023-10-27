@@ -94,7 +94,7 @@
                 "group": "main"
             },
             {
-                "name": "Operating Time, secs",
+                "name": "Operating Time, sec",
                 "id": "operating_time",
                 "reg_type": "input",
                 "address" : "4",
@@ -105,7 +105,7 @@
                 "group": "time"
             },
             {
-                "name": "Fault Time, secs",
+                "name": "Fault Time, sec",
                 "id": "fault_time",
                 "reg_type": "input",
                 "address" : "6",
@@ -116,13 +116,133 @@
                 "group": "time"
             },
             {
-                "name": "Time After Check, secs",
+                "name": "Time After Check, sec",
                 "id": "time_after_check",
                 "reg_type": "input",
                 "address" : "8",
                 "type": "value",
                 "format": "u32",
                 "word_order": "little_endian",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Astronomic Time, sec",
+                "id": "astro_time_sec",
+                "reg_type": "input",
+                "address" : "10",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Astronomic Time, min",
+                "id": "astro_time_min",
+                "reg_type": "input",
+                "address" : "11",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Astronomic Time, hour",
+                "id": "astro_time_hour",
+                "reg_type": "input",
+                "address" : "12",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Astronomic Time, day",
+                "id": "astro_time_day",
+                "reg_type": "input",
+                "address" : "13",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Astronomic Time, month",
+                "id": "astro_time_month",
+                "reg_type": "input",
+                "address" : "14",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Astronomic Time, year",
+                "id": "astro_time_year",
+                "reg_type": "input",
+                "address" : "15",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Global Time, sec",
+                "id": "global_time_sec",
+                "reg_type": "input",
+                "address" : "28",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Global Time, min",
+                "id": "global_time_min",
+                "reg_type": "input",
+                "address" : "29",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Global Time, hour",
+                "id": "global_time_hour",
+                "reg_type": "input",
+                "address" : "30",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Global Time, day",
+                "id": "global_time_day",
+                "reg_type": "input",
+                "address" : "31",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Global Time, month",
+                "id": "global_time_month",
+                "reg_type": "input",
+                "address" : "32",
+                "type": "value",
+                "format": "u16",
+                "enabled": false,
+                "group": "time"
+            },
+            {
+                "name": "Global Time, year",
+                "id": "global_time_year",
+                "reg_type": "input",
+                "address" : "33",
+                "type": "value",
+                "format": "u16",
                 "enabled": false,
                 "group": "time"
             },
@@ -137,7 +257,7 @@
                 "group": "battery"
             },
             {
-                "name": "Battery Rest, months",
+                "name": "Battery Rest, month",
                 "id": "battery_rest",
                 "reg_type": "input",
                 "address" : "16",
